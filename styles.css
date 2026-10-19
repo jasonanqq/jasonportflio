@@ -565,12 +565,82 @@ html[data-theme="light"] .theme-toggle {
   color: #263854;
 }
 html[data-theme="light"] .theme-toggle:hover { background: #edf2ff; }
-@media (min-width: 992px) {
-  .nav-header-controls { margin-left: .75rem; }
-}
 @media (max-width: 575.98px) {
   .theme-toggle { padding: .55rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .theme-toggle { transition: none; }
+}
+
+/* Stable action buttons: fixed outer dimensions AND fixed internal icon/text slots.
+   Avoid moving labels when swapping between colour themes. */
+#navMain .navbar-action {
+  display: inline-grid;
+  grid-template-columns: 18px 78px;
+  column-gap: 6px;
+  align-items: center;
+  justify-content: center;
+  width: 126px;
+  min-width: 126px;
+  height: 42px;
+  padding: 0 8px;
+  flex: 0 0 126px;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1.2;
+}
+#navMain .navbar-action-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 20px;
+  margin: 0 !important;
+  font-size: 16px;
+  line-height: 1;
+}
+#navMain .navbar-action-label {
+  display: block;
+  width: 78px;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Lock the theme switcher to a constant width even when its label changes
+   between "Light mode" and "Dark mode". */
+.theme-toggle .bi {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  flex: 0 0 19px;
+}
+@media (min-width: 1200px) {
+  .theme-toggle {
+    width: 136px;
+    min-width: 136px;
+    height: 42px;
+    padding: .5rem .65rem;
+    flex: 0 0 136px;
+  }
+  .theme-toggle-label {
+    display: inline-block;
+    min-width: 82px;
+    width: 82px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .nav-header-controls { margin-left: .75rem; }
+}
+@media (max-width: 1199.98px) {
+  .theme-toggle {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    padding: 0;
+    flex: 0 0 42px;
+  }
+  .nav-header-controls { margin-left: auto; }
 }
