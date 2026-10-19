@@ -15,18 +15,6 @@
   --radius: 18px;
 }
 
-@media (prefers-color-scheme: light){
-  :root{
-    --bg0:#f7f9ff;
-    --bg1:#eef3ff;
-    --panel: rgba(10,16,32,.05);
-    --panel2: rgba(10,16,32,.08);
-    --border: rgba(10,16,32,.14);
-    --text:#0c1324;
-    --muted: rgba(12,19,36,.70);
-    --shadow: 0 18px 50px rgba(0,0,0,.10);
-  }
-}
 
 /* Page background */
 body{
@@ -424,4 +412,165 @@ a:hover{ text-decoration: underline; }
 .card-glass .card-subtitle,
 .card-glass small{
   color: var(--muted);
+}
+
+/* ===========================================================================
+   THEME SWITCHER - original dark design preserved; light theme added.
+   HTML data-theme is set from saved preference or the visitor's OS appearance.
+   =========================================================================== */
+:root { color-scheme: dark; }
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg0: #f7f9ff;
+  --bg1: #eaf0fb;
+  --panel: rgba(255, 255, 255, .82);
+  --panel2: rgba(255, 255, 255, .96);
+  --border: rgba(58, 80, 128, .20);
+  --text: #17233c;
+  --muted: #4f6079;
+  --accent: #6b48dd;
+  --accent2: #0086c6;
+  --accent3: #128052;
+  --shadow: 0 14px 38px rgba(46, 65, 107, .10);
+}
+html[data-theme="light"] body {
+  background:
+    radial-gradient(800px 500px at 12% 8%, rgba(124,77,255,.10), transparent 60%),
+    radial-gradient(700px 480px at 85% 18%, rgba(0,161,219,.11), transparent 63%),
+    radial-gradient(900px 600px at 60% 100%, rgba(0,179,132,.07), transparent 62%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+}
+html[data-theme="light"] .site-header {
+  background: rgba(248, 251, 255, .88);
+  border-bottom-color: rgba(47, 66, 109, .13);
+}
+html[data-theme="light"] .navbar-dark {
+  --bs-navbar-color: #4c5c77;
+  --bs-navbar-hover-color: #192842;
+  --bs-navbar-brand-color: #17233c;
+  --bs-navbar-brand-hover-color: #17233c;
+}
+.navbar .navbar-brand, .navbar .navbar-brand:hover { color: var(--text); }
+html[data-theme="light"] .navbar .nav-link { color: #465773; }
+html[data-theme="light"] .navbar .nav-link:hover,
+html[data-theme="light"] .navbar .nav-link:focus-visible {
+  color: #182740;
+  background: rgba(93, 69, 200, .07);
+  border-color: rgba(69, 86, 125, .12);
+}
+html[data-theme="light"] .navbar-toggler { border-color: rgba(48, 65, 110, .25) !important; }
+html[data-theme="light"] .navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(23, 35, 60, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  filter: none;
+}
+html[data-theme="light"] .avatar {
+  border-color: rgba(81, 100, 151, .22);
+  background: radial-gradient(120px 120px at 30% 20%, rgba(255,255,255,.48), transparent),
+              linear-gradient(135deg, rgba(124,77,255,.20), rgba(0,164,222,.20));
+}
+html[data-theme="light"] .card-glass {
+  background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(246,249,255,.92));
+  border-color: rgba(70, 92, 141, .16);
+}
+html[data-theme="light"] .card-soft,
+html[data-theme="light"] .contact-item,
+html[data-theme="light"] .chip,
+html[data-theme="light"] .badge-pill,
+html[data-theme="light"] .pill-date,
+html[data-theme="light"] .skill-ico {
+  background: rgba(245, 248, 255, .94);
+  border-color: rgba(77, 96, 140, .20);
+}
+html[data-theme="light"] .stat-icon,
+html[data-theme="light"] .contact-ico {
+  background: linear-gradient(135deg, rgba(124,77,255,.11), rgba(0,145,211,.10));
+  border-color: rgba(70, 92, 141, .14);
+}
+html[data-theme="light"] .chip,
+html[data-theme="light"] .badge-pill,
+html[data-theme="light"] .pill-date,
+html[data-theme="light"] .notice { color: #465873; }
+html[data-theme="light"] .notice,
+html[data-theme="light"] .callout,
+html[data-theme="light"] .message-box {
+  background: rgba(244, 247, 255, .95);
+  border-color: rgba(82, 100, 142, .28);
+}
+html[data-theme="light"] .site-footer {
+  background: rgba(255,255,255,.28);
+  border-top-color: rgba(65, 85, 125, .16);
+}
+html[data-theme="light"] .hr-soft,
+html[data-theme="light"] .hero-divider {
+  background: linear-gradient(90deg, transparent, rgba(59,79,118,.24), transparent);
+}
+html[data-theme="light"] .checklist i { color: #138358; }
+html[data-theme="light"] .skill-ico i { color: #324b73; }
+html[data-theme="light"] .skill-pct {
+  color: #1a2a46;
+  border-color: rgba(71, 93, 144, .18);
+}
+html[data-theme="light"] .typewriter-caret { border-right-color: #3b527d; }
+html[data-theme="light"] .btn-glow {
+  background: linear-gradient(135deg, #6741d9, #0876b5);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(79, 66, 172, .20);
+}
+html[data-theme="light"] .btn-glow:hover {
+  color: #fff;
+  box-shadow: 0 14px 30px rgba(79, 66, 172, .25);
+}
+html[data-theme="light"] .btn-soft {
+  border-color: rgba(65, 84, 128, .30) !important;
+  background: rgba(248, 250, 255, .90);
+  color: #243553;
+}
+html[data-theme="light"] .btn-soft:hover {
+  background: #edf2ff;
+  color: #182740;
+}
+html[data-theme="light"] .skip-link { background: #fff; color: #17233c; }
+
+/* Compact mode control lives alongside the hamburger on mobile and at the
+   right end of the navbar on desktop. It uses theme-aware colours. */
+.nav-header-controls {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  margin-left: auto;
+}
+.theme-toggle {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  min-height: 42px;
+  min-width: 42px;
+  padding: .55rem .75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.23);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  font-weight: 650;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease;
+}
+.theme-toggle:hover { background: rgba(255,255,255,.12); }
+.theme-toggle:focus-visible { outline: 3px solid #a48dff; outline-offset: 3px; }
+.theme-toggle .bi { font-size: 1.05rem; line-height: 1; }
+html[data-theme="light"] .theme-toggle {
+  background: rgba(255,255,255,.80);
+  border-color: rgba(70, 90, 130, .22);
+  color: #263854;
+}
+html[data-theme="light"] .theme-toggle:hover { background: #edf2ff; }
+@media (min-width: 992px) {
+  .nav-header-controls { margin-left: .75rem; }
+}
+@media (max-width: 575.98px) {
+  .theme-toggle { padding: .55rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle { transition: none; }
 }

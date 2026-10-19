@@ -1,10 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Jason Ang | Cybersecurity &amp; IT infrastructure portfolio. Fortinet FortiGate, firewall policies, NAT, VLANs, VPNs, NAS access controls, system migrations and incident response." name="description"/>
 <title>Jason Ang | Cybersecurity &amp; Infrastructure Portfolio</title>
+<link href="https://jasonanqqportfolio.vercel.app/" rel="canonical"/>
+<!-- Apply system or saved theme before styles load to avoid a flash. -->
+<script>
+(function () {
+  var chosen = null;
+  try { chosen = localStorage.getItem('jason-portfolio-theme'); } catch (e) {}
+  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var theme = (chosen === 'light' || chosen === 'dark') ? chosen : (prefersDark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', theme);
+  document.documentElement.setAttribute('data-bs-theme', theme);
+})();
+</script>
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
@@ -26,10 +39,16 @@
 <span class="brand-name">Jason Ang</span>
 </span>
 </a>
+<div class="nav-header-controls order-lg-3">
+<button aria-label="Switch colour theme" class="theme-toggle" id="themeToggle" title="Switch colour theme" type="button">
+<i aria-hidden="true" class="bi bi-moon-stars" id="themeToggleIcon"></i>
+<span class="theme-toggle-label d-none d-xl-inline" id="themeToggleLabel">Dark mode</span>
+</button>
 <button aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navMain" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="navMain">
+</div>
+<div class="collapse navbar-collapse order-lg-2" id="navMain">
 <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
 <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
@@ -142,7 +161,7 @@
 <div class="row g-4">
 <div class="col-lg-7">
 <div class="card card-glass">
-<div class="card-body"><h3 class="h5 mb-3">Network &amp; security</h3><div class="d-flex flex-wrap gap-2 mb-4"><span class="chip">Fortinet FortiGate</span><span class="chip">Firewall policies</span><span class="chip">NAT</span><span class="chip">VLAN configuration</span><span class="chip">IPsec VPN</span><span class="chip">SSL VPN</span><span class="chip">Static WAN IP configuration</span><span class="chip">Network troubleshooting</span><span class="chip">Endpoint security</span></div><hr class="hr-soft my-4"/><h3 class="h5 mb-3">Systems &amp; administration</h3><div class="d-flex flex-wrap gap-2"><span class="chip">Windows Server</span><span class="chip">Active Directory</span><span class="chip">DNS &amp; DHCP</span><span class="chip">Hyper-V</span><span class="chip">NAS &amp; file permissions</span><span class="chip">Microsoft 365</span><span class="chip">Outlook / IMAP migrations</span><span class="chip">Sysprep</span><span class="chip">Windows deployment</span></div></div>
+<div class="card-body"><h3 class="h5 mb-3">Network &amp; security</h3><div class="d-flex flex-wrap gap-2 mb-4"><span class="chip">Fortinet FortiGate</span><span class="chip">Firewall policies</span><span class="chip">NAT</span><span class="chip">VLAN configuration</span><span class="chip">IPsec VPN</span><span class="chip">SSL VPN</span><span class="chip">Static WAN IP configuration</span><span class="chip">Network troubleshooting</span><span class="chip">Endpoint security</span></div><hr class="hr-soft my-4"/><h3 class="h5 mb-3">Systems &amp; administration</h3><div class="d-flex flex-wrap gap-2"><span class="chip">Windows Server</span><span class="chip">Active Directory</span><span class="chip">DNS management</span><span class="chip">MX records</span><span class="chip">SPF / DKIM / DMARC</span><span class="chip">DHCP</span><span class="chip">Hyper-V</span><span class="chip">NAS &amp; file permissions</span><span class="chip">Microsoft 365</span><span class="chip">Outlook / IMAP migrations</span><span class="chip">Sysprep</span><span class="chip">Windows deployment</span></div></div>
 </div>
 </div>
 <div class="col-lg-5">
@@ -160,9 +179,9 @@
 <h2 class="h2 mb-1">Experience</h2>
 <p class="text-muted-strong mb-0">Practical experience in network security, systems administration and migrations.</p>
 </div>
-<div class="row g-4"><div class="col-12"><article class="card card-glass"><div class="card-body"><div class="d-flex align-items-start justify-content-between flex-wrap gap-3"><div><h3 class="h4 mb-1">Part-Time Systems Engineer</h3><div class="text-muted-strong">SVIT Pte Ltd • Singapore</div></div><div class="pill-date"><i class="bi bi-calendar3 me-2"></i>Jun–Jul 2025 · Aug–Oct 2025 · Dec 2025–Jan 2026 · Mar–Apr 2026</div></div><ul class="mt-3 mb-0"><li>Configured customer firewall security settings and helped secure network access.</li><li>Created standardised Windows deployment images using Sysprep for workstation setup.</li><li>Assisted with NAS migration, preserving folder permissions and reporting 100% data integrity with zero downtime.</li><li>Helped with encrypted-data migration during a Windows 11 transition, checking files remained accessible.</li><li>Set up endpoint security and checked workstation connectivity during infrastructure changes.</li></ul></div></article></div><div class="col-12"><article class="card card-glass"><div class="card-body"><div class="d-flex align-items-start justify-content-between flex-wrap gap-3"><div><h3 class="h4 mb-1">Systems Engineer / Part-Time Systems Engineer</h3><div class="text-muted-strong">Syslogic Pte Ltd • Singapore</div></div><div class="pill-date"><i class="bi bi-calendar3 me-2"></i>Sep 2023–Apr 2024 · Apr–Jul 2024 · Dec 2024–Feb 2025</div></div><ul class="mt-3 mb-0"><li>Configured FortiGate firewalls, including security policies, NAT, VLANs, IPsec VPNs and SSL VPNs; troubleshot access and connectivity issues.</li><li>Designed and set up the NAS folder structure and user permissions for an organisation.</li><li>Migrated IMAP email accounts to Outlook and checked mail synchronisation; assisted with Lotus Notes-to-Outlook and Microsoft 365 migrations.</li><li>Configured routers with ISP-provided static WAN IP settings and tested internet connectivity.</li><li>Assisted during a ransomware incident by isolating a compromised device to help prevent the infection spreading across the network.</li></ul>
+<div class="row g-4"><div class="col-12"><article class="card card-glass"><div class="card-body"><div class="d-flex align-items-start justify-content-between flex-wrap gap-3"><div><h3 class="h4 mb-1">Part-Time Systems Engineer</h3><div class="text-muted-strong">SVIT Pte Ltd • Singapore</div></div><div class="pill-date"><i class="bi bi-calendar3 me-2"></i>Jun–Jul 2025 · Aug–Oct 2025 · Dec 2025–Jan 2026 · Mar–Apr 2026</div></div><ul class="mt-3 mb-0"><li>Configured customer firewall security settings and helped secure network access.</li><li>Configured DNS for client domains, including MX records for mail routing and SPF, DKIM and DMARC records for email authentication.</li><li>Created standardised Windows deployment images using Sysprep for workstation setup.</li><li>Assisted with NAS migration, preserving folder permissions and reporting 100% data integrity with zero downtime.</li><li>Helped with encrypted-data migration during a Windows 11 transition, checking files remained accessible.</li><li>Set up endpoint security and checked workstation connectivity during infrastructure changes.</li></ul></div></article></div><div class="col-12"><article class="card card-glass"><div class="card-body"><div class="d-flex align-items-start justify-content-between flex-wrap gap-3"><div><h3 class="h4 mb-1">Systems Engineer / Part-Time Systems Engineer</h3><div class="text-muted-strong">Syslogic Pte Ltd • Singapore</div></div><div class="pill-date"><i class="bi bi-calendar3 me-2"></i>Sep 2023–Apr 2024 · Apr–Jul 2024 · Dec 2024–Feb 2025</div></div><ul class="mt-3 mb-0"><li>Configured FortiGate firewalls, including security policies, NAT, VLANs, IPsec VPNs and SSL VPNs; troubleshot access and connectivity issues.</li><li>Designed and set up the NAS folder structure and user permissions for an organisation.</li><li>Migrated IMAP email accounts to Outlook and checked mail synchronisation; assisted with Lotus Notes-to-Outlook and Microsoft 365 migrations.</li><li>Set up DNS for domains from scratch, including MX, SPF, DKIM and DMARC records, to support email routing and authentication.</li><li>Configured routers with ISP-provided static WAN IP settings and tested internet connectivity.</li><li>Assisted during a ransomware incident by isolating a compromised device to help prevent the infection spreading across the network.</li></ul>
 <div class="mt-3">
-  <a class="btn btn-primary btn-glow" href="downloads/JASON-Syslogic-Testimonial.pdf" target="_blank" rel="noopener" aria-label="View Syslogic employer testimonial (PDF)">View Syslogic Testimonial (PDF)</a>
+<a aria-label="View Syslogic employer testimonial (PDF)" class="btn btn-primary btn-glow" href="downloads/JASON-Syslogic-Testimonial.pdf" rel="noopener" target="_blank">View Syslogic Testimonial (PDF)</a>
 </div></div></article></div></div>
 </div>
 </section>
@@ -174,7 +193,16 @@
 <p class="text-muted-strong mb-0">Selected work and practical projects.</p>
 </div>
 <article>
-<div class="row g-4"><div class="col-12 col-md-6"><div class="card card-glass h-100"><div class="card-body d-flex flex-column"><h3 class="h5 mb-2">Nanyang Polytechnic Golf Club Website</h3><p class="text-muted-strong mb-3">Created a mock club website with straightforward navigation and an easy-to-follow layout.</p><div class="mt-auto"><span class="chip">UI/UX</span> <span class="chip">Web design</span></div><a class="btn btn-primary btn-glow mt-3 align-self-start" download="" href="downloads/jasonanqq-uiux-project-nyp-golf-club.zip">Download Project (.zip)</a></div></div></div><div class="col-12 col-md-6"><div class="card card-glass h-100"><div class="card-body d-flex flex-column"><h3 class="h5 mb-2">NAS Folder &amp; Permission Setup</h3><p class="text-muted-strong mb-3">Designed an organisation’s shared-folder structure and configured access permissions to match different user roles.</p><div class="mt-auto"><span class="chip">NAS</span> <span class="chip">Access control</span></div></div></div></div></div>
+<div class="row g-4"><div class="col-12 col-md-6">
+<div class="card card-glass h-100">
+<div class="card-body d-flex flex-column">
+<h3 class="h5 mb-2">Corsa Tyres Website</h3>
+<p class="text-muted-strong mb-3">Designed and manage the live website for Corsa Tyres, maintaining its page layouts and keeping the website content up to date.</p>
+<div class="mt-auto"><span class="chip">Website design</span> <span class="chip">Website management</span></div>
+<a aria-label="Visit Corsa Tyres website (opens in a new tab)" class="btn btn-primary btn-glow mt-3 align-self-start" href="https://corsatyres.com.sg/" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="bi bi-box-arrow-up-right me-2"></i>Visit Live Website</a>
+</div>
+</div>
+</div><div class="col-12 col-md-6"><div class="card card-glass h-100"><div class="card-body d-flex flex-column"><h3 class="h5 mb-2">Nanyang Polytechnic Golf Club Website</h3><p class="text-muted-strong mb-3">Created a mock club website with straightforward navigation and an easy-to-follow layout.</p><div class="mt-auto"><span class="chip">UI/UX</span> <span class="chip">Web design</span></div><a class="btn btn-primary btn-glow mt-3 align-self-start" download="" href="downloads/jasonanqq-uiux-project-nyp-golf-club.zip">Download Project (.zip)</a></div></div></div><div class="col-12 col-md-6"><div class="card card-glass h-100"><div class="card-body d-flex flex-column"><h3 class="h5 mb-2">NAS Folder &amp; Permission Setup</h3><p class="text-muted-strong mb-3">Designed an organisation’s shared-folder structure and configured access permissions to match different user roles.</p><div class="mt-auto"><span class="chip">NAS</span> <span class="chip">Access control</span></div></div></div></div></div>
 </article></div>
 <!-- Education -->
 </section><section class="section py-5 alt" id="education">
@@ -243,7 +271,7 @@
 <div class="contact-ico"><i class="bi bi-globe2"></i></div>
 <div>
 <div class="contact-label">Website</div>
-<a class="contact-link" href="https://jasonportflio.vercel.app" rel="noopener" target="_blank">jasonportflio.vercel.app</a>
+<a class="contact-link" href="https://jasonanqqportfolio.vercel.app/" rel="noopener" target="_blank">jasonanqqportfolio.vercel.app</a>
 </div>
 </div>
 </div>
@@ -264,6 +292,50 @@
 <div>© Jason Ang • <span id="year"></span></div>
 </div>
 </footer>
+<script>
+(function () {
+  var button = document.getElementById('themeToggle');
+  var icon = document.getElementById('themeToggleIcon');
+  var label = document.getElementById('themeToggleLabel');
+  var root = document.documentElement;
+  var storageKey = 'jason-portfolio-theme';
+  var systemTheme = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  if (!button) return;
+
+  function selectedTheme() {
+    try {
+      var value = localStorage.getItem(storageKey);
+      return (value === 'light' || value === 'dark') ? value : null;
+    } catch (e) { return null; }
+  }
+  function preferredTheme() {
+    return systemTheme && systemTheme.matches ? 'dark' : 'light';
+  }
+  function apply(theme) {
+    root.setAttribute('data-theme', theme);
+    root.setAttribute('data-bs-theme', theme);
+    var next = theme === 'dark' ? 'light' : 'dark';
+    button.setAttribute('aria-label', 'Switch to ' + next + ' mode');
+    button.setAttribute('title', 'Switch to ' + next + ' mode');
+    icon.className = next === 'light' ? 'bi bi-sun' : 'bi bi-moon-stars';
+    label.textContent = next === 'light' ? 'Light mode' : 'Dark mode';
+  }
+  apply(selectedTheme() || preferredTheme());
+  button.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem(storageKey, next); } catch (e) {}
+    apply(next);
+  });
+  // Visitors who have not manually chosen a theme continue following OS changes.
+  if (systemTheme) {
+    var handleChange = function () {
+      if (!selectedTheme()) apply(preferredTheme());
+    };
+    if (systemTheme.addEventListener) systemTheme.addEventListener('change', handleChange);
+    else if (systemTheme.addListener) systemTheme.addListener(handleChange);
+  }
+})();
+</script>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
