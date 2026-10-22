@@ -644,3 +644,8 @@ html[data-theme="light"] .theme-toggle:hover { background: #edf2ff; }
   }
   .nav-header-controls { margin-left: auto; }
 }
+
+/* Sentinel Desk portfolio media */
+.sentinel-feature-image { width: 100%; height: auto; display: block; border-radius: 14px; border: 1px solid var(--border); }
+.sentinel-gallery-img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #0b1324; border-radius: 16px 16px 0 0; border-bottom: 1px solid var(--border); }
+#sentinel-gallery, #sentinel-desk { scroll-margin-top: 94px; }
