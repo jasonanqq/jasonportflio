@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Jason Ang | Cybersecurity &amp; IT infrastructure portfolio. Fortinet FortiGate, firewall policies, NAT, VLANs, VPNs, NAS access controls, system migrations and incident response." name="description"/>
+<meta content="Jason Ang | Cybersecurity &amp; IT infrastructure portfolio. FortiGate security, network infrastructure, Python-based SIEM development, email forensics and incident response." name="description"/>
 <title>Jason Ang | Cybersecurity &amp; Infrastructure Portfolio</title>
 <link href="https://jasonanqqportfolio.vercel.app/" rel="canonical"/>
 <!-- Apply system or saved theme before styles load to avoid a flash. -->
@@ -83,7 +83,7 @@
 <div aria-label="Intro typing animation" class="typewriter-wrap mb-3"><span class="typewriter-prefix">Hi</span> <span aria-hidden="true" class="typewriter-emoji">👋</span><span class="typewriter-comma">,</span> <span class="typewriter-text" id="typed"></span><span aria-hidden="true" class="typewriter-caret"></span></div>
 <div class="badge-pill mb-3"><i class="bi bi-shield-lock me-2"></i>FortiGate Firewalls • Network Security • IT Infrastructure</div>
 <h1 class="display-5 fw-semibold mb-3">Securing networks and keeping systems running</h1>
-<p class="lead text-muted-strong mb-4">I’m a cybersecurity diploma student with hands-on experience in FortiGate firewalls, network configuration and IT infrastructure support. My work includes setting up VPNs, managing NAS permissions, migrating email systems and helping contain a ransomware incident.</p>
+<p class="lead text-muted-strong mb-4">I’m a cybersecurity diploma student with practical experience in FortiGate firewalls, network infrastructure and incident response. I also build software projects, including Sentinel Desk, a local SIEM that collects security logs and helps investigate suspicious emails.</p>
 <div class="d-flex flex-wrap gap-2">
 <a class="btn btn-primary btn-glow" href="mailto:jasonanqq@gmail.com?subject=Opportunity%20%E2%80%93%20System%20Engineer&amp;body=Hi%20Jason%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20a%20role/project%20involving%20security%20and%20infrastructure.%20Are%20you%20available%20for%20a%20quick%20chat%20this%20week%3F%0A%0ARegards%2C%0A%5BYour%20Name%5D">
 <i class="bi bi-envelope me-2"></i>Email
@@ -145,7 +145,7 @@
 <div class="row g-4">
 <div class="col-lg-7">
 <div class="card card-glass h-100">
-<div class="card-body"><p class="mb-3">I’m currently studying for a Diploma in Cybersecurity &amp; Digital Forensics at Nanyang Polytechnic. Alongside school, I’ve worked on customer networks and systems at Syslogic and SVIT.</p><p class="mb-0">I enjoy the practical side of IT: configuring firewalls, fixing connectivity problems, organising secure file access and checking that users can work normally after a migration. I’m looking for an internship where I can keep improving my network security and infrastructure skills.</p></div>
+<div class="card-body"><p class="mb-3">I’m currently studying for a Diploma in Cybersecurity &amp; Digital Forensics at Nanyang Polytechnic. Alongside school, I’ve worked on customer networks and systems at Syslogic and SVIT.</p><p class="mb-0">I enjoy troubleshooting networks, securing systems and turning what I learn at work into useful projects. Sentinel Desk grew from my interest in monitoring security events and from investigating suspicious emails during client support work and on my own. I’m looking for a technology internship where I can keep developing my security and programming skills.</p></div>
 </div>
 </div>
 <div class="col-lg-5">
@@ -171,7 +171,7 @@
 </div>
 <div class="col-lg-5">
 <div class="card card-glass h-100">
-<div class="card-body"><h3 class="h5 mb-3">Other experience</h3><div class="d-flex flex-wrap gap-2"><span class="chip">Ransomware containment</span><span class="chip">Phishing email investigation</span><span class="chip">Migration checks</span><span class="chip">Python</span><span class="chip">HTML &amp; CSS</span></div><hr class="hr-soft my-4"/><h3 class="h5 mb-2">What I’m looking for</h3><p class="text-muted-strong mb-0">Internships in network engineering, cybersecurity, firewall administration or IT infrastructure where I can build on my practical experience.</p></div>
+<div class="card-body"><h3 class="h5 mb-3">Other experience</h3><div class="d-flex flex-wrap gap-2"><span class="chip">Ransomware containment</span><span class="chip">Phishing email investigation</span><span class="chip">Infrastructure migration &amp; testing</span><span class="chip">Python</span><span class="chip">SQLite / SQL</span><span class="chip">JavaScript</span><span class="chip">SIEM detection rules</span><span class="chip">Email header analysis</span><span class="chip">HTML &amp; CSS</span></div><hr class="hr-soft my-4"/><h3 class="h5 mb-2">What I’m looking for</h3><p class="text-muted-strong mb-0">Technology internships in cybersecurity, security engineering and infrastructure, where I can combine hands-on systems experience with Python and data analysis.</p></div>
 </div>
 </div>
 </div>
@@ -198,7 +198,32 @@
 <p class="text-muted-strong mb-0">Selected work and practical projects.</p>
 </div>
 <article>
-<div class="row g-4"><div class="col-12 col-md-6">
+<div class="row g-4"><div class="col-12" id="sentinel-desk">
+  <article class="card card-glass h-100">
+    <div class="card-body">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <img class="sentinel-feature-image" src="assets/sentinel/overview.webp" alt="Sentinel Desk security monitoring dashboard with event statistics and activity graph" loading="lazy" width="1500" height="718"/>
+        </div>
+        <div class="col-lg-7">
+          <div class="small text-muted-strong fw-semibold mb-2">FEATURED CYBERSECURITY PROJECT</div>
+          <h3 class="h4 mb-2">Sentinel Desk — SIEM &amp; Email Threat Analysis</h3>
+          <p class="text-muted-strong mb-3">Built a local Python-based SIEM to collect Windows and firewall events, index and search logs, detect suspicious activity, and manage security alerts. The Email Threat Analysis module examines uploaded email headers and content for indicators of spoofing, credential phishing and sextortion, with explainable risk scores and investigation records.</p>
+          <p class="text-muted-strong mb-3">The email module was inspired by investigating a suspicious message for a client while working part-time, and later analysing a sextortion scam I received myself as a way to practise the same skills. My goal is to make technical security evidence easier to understand.</p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="chip">Python</span><span class="chip">SQLite / FTS5</span><span class="chip">JavaScript</span><span class="chip">Syslog</span><span class="chip">Email forensics</span>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary btn-glow" href="#sentinel-gallery"><i class="bi bi-images me-2" aria-hidden="true"></i>View Screenshots</a>
+            <a class="btn btn-primary btn-glow" href="downloads/Sentinel_Desk_SIEM.zip" download><i class="bi bi-download me-2" aria-hidden="true"></i>Download Project (.zip)</a>
+          </div>
+          <p class="small text-muted-strong mt-3 mb-0">Local learning project; not a hosted production SIEM. Example security data and email headers are anonymised. Header authentication results are reported values, not independent verification.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+<div class="col-12 col-md-6">
 <div class="card card-glass h-100">
 <div class="card-body d-flex flex-column">
 <h3 class="h5 mb-2">Corsa Tyres Website</h3>
@@ -210,7 +235,7 @@
 </div><div class="col-12 col-md-6">
 <div class="card card-glass h-100">
 <div class="card-body d-flex flex-column">
-<h3 class="h5 mb-2">CommonGround Timetable Comparison App</h3>
+<h3 class="h5 mb-2">CommonGround — Timetable Comparison App</h3>
 <p class="text-muted-strong mb-3">Built a web app that helps students find free time together by comparing uploaded timetables. Visitors can compare as guests, while signed-in users can save schedules and organise group comparisons.</p>
 <div class="mt-auto d-flex flex-wrap gap-2"><span class="chip">JavaScript</span><span class="chip">Supabase</span><span class="chip">Timetable comparison</span></div>
 <div class="d-flex flex-wrap gap-2 mt-3">
@@ -221,6 +246,28 @@
 </div>
 </div><div class="col-12 col-md-6"><div class="card card-glass h-100"><div class="card-body d-flex flex-column"><h3 class="h5 mb-2">Nanyang Polytechnic Golf Club Website</h3><p class="text-muted-strong mb-3">Created a mock club website with straightforward navigation and an easy-to-follow layout.</p><div class="mt-auto"><span class="chip">UI/UX</span> <span class="chip">Web design</span></div><a class="btn btn-primary btn-glow mt-3 align-self-start" download="" href="downloads/jasonanqq-uiux-project-nyp-golf-club.zip">Download Project (.zip)</a></div></div></div><div class="col-12 col-md-6"><div class="card card-glass h-100"><div class="card-body d-flex flex-column"><h3 class="h5 mb-2">NAS Folder &amp; Permission Setup</h3><p class="text-muted-strong mb-3">Designed an organisation’s shared-folder structure and configured access permissions to match different user roles.</p><div class="mt-auto"><span class="chip">NAS</span> <span class="chip">Access control</span></div></div></div></div></div>
 </article></div>
+<section class="section py-5 alt" id="sentinel-gallery">
+<div class="container"><div class="section-title mb-4"><h2 class="h2 mb-1">Sentinel Desk — Project Walkthrough</h2><p class="text-muted-strong mb-0">Screenshots from the local security monitoring lab, using test data. Open the project ZIP to run the application on your own computer.</p></div>
+<div class="row g-4"><div class="col-12 col-md-6 col-lg-4">
+<article class="card card-glass h-100"><img class="sentinel-gallery-img" src="assets/sentinel/overview.webp" alt="Security Monitoring Dashboard screenshot of Sentinel Desk" loading="lazy"/><div class="card-body"><h3 class="h6 mb-2">Security Monitoring Dashboard</h3><p class="text-muted-strong mb-0 small">View events, firewall-deny activity and alerts by time range.</p></div></article>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+<article class="card card-glass h-100"><img class="sentinel-gallery-img" src="assets/sentinel/events.webp" alt="Event Explorer screenshot of Sentinel Desk" loading="lazy"/><div class="card-body"><h3 class="h6 mb-2">Event Explorer</h3><p class="text-muted-strong mb-0 small">Search and filter indexed Windows, firewall and application logs.</p></div></article>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+<article class="card card-glass h-100"><img class="sentinel-gallery-img" src="assets/sentinel/alerts.webp" alt="Alert Management screenshot of Sentinel Desk" loading="lazy"/><div class="card-body"><h3 class="h6 mb-2">Alert Management</h3><p class="text-muted-strong mb-0 small">Review detection evidence and record alert resolution.</p></div></article>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+<article class="card card-glass h-100"><img class="sentinel-gallery-img" src="assets/sentinel/collection.webp" alt="Live Log Collection screenshot of Sentinel Desk" loading="lazy"/><div class="card-body"><h3 class="h6 mb-2">Live Log Collection</h3><p class="text-muted-strong mb-0 small">Collect syslog, watched log files and Windows Security events.</p></div></article>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+<article class="card card-glass h-100"><img class="sentinel-gallery-img" src="assets/sentinel/email.webp" alt="Email Threat Analysis screenshot of Sentinel Desk" loading="lazy"/><div class="card-body"><h3 class="h6 mb-2">Email Threat Analysis</h3><p class="text-muted-strong mb-0 small">Examine uploaded email headers and content with explainable indicators.</p></div></article>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+<article class="card card-glass h-100"><img class="sentinel-gallery-img" src="assets/sentinel/investigation.webp" alt="Email Investigation screenshot of Sentinel Desk" loading="lazy"/><div class="card-body"><h3 class="h6 mb-2">Email Investigation</h3><p class="text-muted-strong mb-0 small">Inspect authentication results and suspicious claims without executing content.</p></div></article>
+</div></div>
+<div class="mt-4"><a class="btn btn-primary btn-glow" href="#sentinel-desk"><i class="bi bi-arrow-up me-2" aria-hidden="true"></i>Back to Sentinel Desk</a></div>
+</div></section>
 <!-- Education -->
 </section><section class="section py-5 alt" id="education">
 <div class="container">
